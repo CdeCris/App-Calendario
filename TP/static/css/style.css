@@ -1,0 +1,275 @@
+*{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "system-ui";
+}
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+div#view__1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    position: relative;
+    header#header__view__1 {
+        height: 35.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(209, 158, 133);
+        border-radius: 2rem;
+        padding: 1rem;
+        section.content__text__title {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: #fff6ea;
+            span.text__title__header {
+                height: 30%;
+                width: 100%;
+                font-size: 1.5em;
+                text-align: center;
+                font-weight: 500;
+            }
+            span.text__caption__header {
+                height: 50%;
+                width: 100%;
+                font-size: 1.05em;
+                text-align: center;
+            }
+        }
+    }
+    main#main__view__1 {
+        height: auto;
+        min-height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        span.text__title__main {
+            height: 12%;
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.4em;
+            font-weight: 500;
+            color: #565454;
+        }        
+        div#main__content__drugs {
+            height: 88%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+        }
+    }
+}
+
+div#view__2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    position: relative;
+
+    header#header__view__2 {
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+div#view__3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    position: relative;
+}
+div#view__4 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+button.material-symbols-outlined {
+    background-color: white;
+    border: none;
+    font-size: 2.2rem;
+    padding: 1rem;
+}
+
+
+footer{
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    right: 0;
+    border-radius: 2rem 2rem 0rem 0rem;
+
+    nav.nav__btns__control {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+
+        button.btn__nav {
+            color: gray;
+        }
+        button.btn__center.material-symbols-outlined {
+            position: relative;
+            top: -3.5rem;
+            height: 4.2rem;
+            width: 4.2rem;
+            background-color: #262652;
+            color: white;
+            border-radius: 1.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        article.btns__side {
+            width: 32%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav__check{
+            color: #262652!important;
+        }
+        
+    }
+
+}
+
+/* ------------------------------------- */
+/* ---------VISIBLE/NO VISIBLE---------- */
+/* ------------------------------------- */
+
+.border_image__none{
+    display: none!important;
+}
+button.mark__none {
+    display: none!important;
+}
+.check__none{
+    display: none!important;
+}
+.alert__none{
+    display: none!important;
+}
+
+/* ------------------------------------ */
+/* ------------COMPONENTES------------- */
+/* ------------------------------------ */
+
+/* COMPONENTE PASTILLA */
+div#component__drug {
+    min-height: 6.5rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.2rem 0.8rem;
+    gap: 1rem;
+    section.drug__info {
+        height: 70%;
+        width: 100%;
+        max-height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        article.drug {
+            height: 100%;
+            min-width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .drug__desc {
+                height: 100%;
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: start;
+                span.drug__name {
+                    font-size: 1.2em;
+                    font-weight: 600;
+                }
+                span.drug__hour {
+                    font-size: 0.95em;
+                    color: #9b9b9b;
+                }
+            }
+            img.drug__img {
+                height: 3.5rem;
+            }
+            .border__image {
+                height: 120%;
+                width: 4px;
+                background-color: #e9ae74;;
+                border-radius: 0.1rem;
+                margin-right: 1rem;
+            }
+        }
+        button.drug__checkbox {
+            height: 2rem;
+            width: 2rem;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        button.checked {
+            background: #ffb300;
+            border: #ffb300;
+        }
+    }
+    section.drug__alert__box {
+        height: 30%;
+        width: 70%;
+        background: #ffa5005c;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0.4rem 0.6rem;
+        color: #cf5426;
+        font-size: 0.9em;
+        font-weight: 500;
+        border-radius: 0.5rem;
+    }
+}

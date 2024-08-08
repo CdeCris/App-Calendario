@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>App-Drug</title>
+</head>
+<body>
+    <div id="view__1">
+        <header id="header__view__1">
+            <section class="content__text__title">
+                <span class="text__title__header">Halo, Marco!</span>
+                <span class="text__caption__header">Mari lihat ceklis selanjutnya!</span>
+            </section>
+            <div id="component__drug">
+                <section class="drug__info">
+                    <article class="drug">
+                        <div class="border__image border_image__none"></div>
+                        <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                        <div class="drug__desc">
+                            <span class="drug__name">Antihistamin</span>
+                            <span class="drug__hour">Hari ini pukul 10:00</span>
+                        </div>
+                    </article>
+                    <button class="drug__checkbox check__none" id="cb1" onclick="check(this)"><span class="material-symbols-outlined" id="cb1_symbol">check</span></button>
+                </section>
+                <section class="drug__alert__box alert__none">
+                    <div class="icon__clock material-symbols-outlined">schedule</div>
+                    <span class="drug__alert__msg">Sudah Diminum pukul 10:05</span>
+                </section>
+            </div>
+        </header>
+        <main id="main__view__1">
+            <span class="text__title__main">Jadwal Hari Ini</span>
+            <div id="main__content__drugs">
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pastilla_redonda2.png" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Siladex</span>
+                                <span class="drug__hour">Hari ini pukul 08:00hs</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox checked" id="cb2" onclick="check(this)"><span class="material-symbols-outlined" id="cb2_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">Sudah Diminum pukul 08:05</span>
+                    </section>
+                </div>
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Antihistamin</span>
+                                <span class="drug__hour">Hari ini pukul 10:00</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox" id="cb3" onclick="check(this)"><span class="material-symbols-outlined" id="cb3_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box alert__none">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">Sudah Diminum pukul 10:05</span>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="view__2">
+        <header id="header__view__2">
+            <section class="content__text__title">
+                <span class="text__title__header">Kalender</span>
+            </section>
+            <div id="component__drug">
+                <section class="drug__info">
+                    <article class="drug">
+                        <div class="border__image border_image__none"></div>
+                        <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                        <div class="drug__desc">
+                            <span class="drug__name">Antihistamin</span>
+                            <span class="drug__hour">Hari ini pukul 10:00</span>
+                        </div>
+                    </article>
+                    <button class="drug__checkbox check__none" id="cb1" onclick="check(this)"><span class="material-symbols-outlined" id="cb1_symbol">check</span></button>
+                </section>
+                <section class="drug__alert__box alert__none">
+                    <div class="icon__clock material-symbols-outlined">schedule</div>
+                    <span class="drug__alert__msg">No se que cosa 10:05hs</span>
+                </section>
+            </div>
+        </header>
+        <main id="main__view__1">
+            <span class="text__title__main">Section: Menu</span>
+            <div id="main__content__drugs">
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pastilla_redonda2.png" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Antihistaminico</span>
+                                <span class="drug__hour">Lunes a las 10:00hs</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox checked" id="cb2" onclick="check(this)"><span class="material-symbols-outlined" id="cb2_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">No se que cosa 10:05hs</span>
+                    </section>
+                </div>
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Antihistaminico</span>
+                                <span class="drug__hour">Lunes a las 10:00hs</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox" id="cb3" onclick="check(this)"><span class="material-symbols-outlined" id="cb3_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box alert__none">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">No se que cosa 10:05hs</span>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="view__3">
+        <header id="header__view__2">
+            <section class="content__text__title">
+                <span class="text__title__header">Analytics</span>
+            </section>
+            <div id="component__drug">
+                <section class="drug__info">
+                    <article class="drug">
+                        <div class="border__image border_image__none"></div>
+                        <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                        <div class="drug__desc">
+                            <span class="drug__name">Antihistaminico</span>
+                            <span class="drug__hour">Lunes a las 10:00hs</span>
+                        </div>
+                    </article>
+                    <button class="drug__checkbox check__none" id="cb1" onclick="check(this)"><span class="material-symbols-outlined" id="cb1_symbol">check</span></button>
+                </section>
+                <section class="drug__alert__box alert__none">
+                    <div class="icon__clock material-symbols-outlined">schedule</div>
+                    <span class="drug__alert__msg">No se que cosa 10:05hs</span>
+                </section>
+            </div>
+        </header>
+        <main id="main__view__1">
+            <span class="text__title__main">Section: Menu</span>
+            <div id="main__content__drugs">
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pastilla_redonda2.png" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Antihistaminico</span>
+                                <span class="drug__hour">Lunes a las 10:00hs</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox checked" id="cb2" onclick="check(this)"><span class="material-symbols-outlined" id="cb2_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">No se que cosa 10:05hs</span>
+                    </section>
+                </div>
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Antihistaminico</span>
+                                <span class="drug__hour">Lunes a las 10:00hs</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox" id="cb3" onclick="check(this)"><span class="material-symbols-outlined" id="cb3_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box alert__none">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">No se que cosa 10:05hs</span>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="view__4">
+        <header id="header__view__2">
+            <section class="content__text__title">
+                <span class="text__title__header">Perfil</span>
+            </section>
+            <div id="component__drug">
+                <section class="drug__info">
+                    <article class="drug">
+                        <div class="border__image border_image__none"></div>
+                        <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                        <div class="drug__desc">
+                            <span class="drug__name">Antihistaminico</span>
+                            <span class="drug__hour">Lunes a las 10:00hs</span>
+                        </div>
+                    </article>
+                    <button class="drug__checkbox check__none" id="cb1" onclick="check(this)"><span class="material-symbols-outlined" id="cb1_symbol">check</span></button>
+                </section>
+                <section class="drug__alert__box alert__none">
+                    <div class="icon__clock material-symbols-outlined">schedule</div>
+                    <span class="drug__alert__msg">No se que cosa 10:05hs</span>
+                </section>
+            </div>
+        </header>
+        <main id="main__view__1">
+            <span class="text__title__main">Section: Menu</span>
+            <div id="main__content__drugs">
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pastilla_redonda2.png" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Antihistaminico</span>
+                                <span class="drug__hour">Lunes a las 10:00hs</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox checked" id="cb2" onclick="check(this)"><span class="material-symbols-outlined" id="cb2_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">No se que cosa 10:05hs</span>
+                    </section>
+                </div>
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Antihistaminico</span>
+                                <span class="drug__hour">Lunes a las 10:00hs</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox" id="cb3" onclick="check(this)"><span class="material-symbols-outlined" id="cb3_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box alert__none">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">No se que cosa 10:05hs</span>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer id="footer">
+        <nav class="nav__btns__control">
+            <article class="btns__side">
+                <button class="btn__nav material-symbols-outlined nav__check" onclick="showMenu()" id="home">home</button>
+                <button class="btn__nav material-symbols-outlined" onclick="showCalendar()" id="calendar">calendar_month</button>
+            </article>
+            <button class="btn__center material-symbols-outlined" id="add">add</button>
+            <article class="btns__side">
+                <button class="btn__nav material-symbols-outlined" onclick="showAnalytics()" id="analytics">analytics</button>
+                <button class="btn__nav material-symbols-outlined" onclick="showPerfil()" id="perfil">person</button>
+            </article>
+        </nav>
+    </footer>
+    <script src="js/components/btn-check.js"></script>
+    <script src="js/components/btn-nav.js"></script>
+</body>
+</html>
+<!-- 
+
+    Notas BD
+
+    COUNT (*) -> Devuelve el numero de registros
+    SELECT COUTN (*) as "Cant_Registros" FROM table_name
+
+    AVG (column_int/float/double) -> devuelve el promedio de los valores de todos los registros
+        SELECT AVG (column_name) as "Promedio" FROM table_name
+
+    SUM (column_int/float/double) -> devuelve la suma de los valores de todos los registros
+        SELECT SUM (column_name) as "Total" FROM table_name
+
+    MAX (column_int/float/double) -> devuelve el mayor valor de todos los registros
+        SELECT MAX (column_name) as "Maximo" FROM table_name
+
+    MIN (column_int/float/double) -> devuelve el menor valor de todos los registros
+        SELECT MIN (column_name) as "Minimo" FROM table_name
+
+    CONCAT (value, value, ...) -> concatena los valores de las columnas especificadas
+        SELECT CONCAT (firstName, " ", lastName) as "Nombre_Apellido" FROM table_name
+
+    LENGTH (column_name) -> devuelve el largo de caracteres de cada registro de la columna
+
+    UPPER (column_name) -> devuelve los caracteres de cada registro en mayuscula de la columna
+
+    LOWER (column_name) -> devuelve los caracteres de cada registro en minuscula de la columna
+
+    ROUND (column_int/float/double) -> devuelve el valor cada registro redondeado
+
+    NOW() -> devuelve el fecha y hora del servidor
+
+    SQRT (column_int/float/double) -> devuelve el valor de la raiz de cada registro 
+
+-->
