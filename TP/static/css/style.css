@@ -80,7 +80,7 @@ div#view__1 {
 div#view__2 {
     height: 100%;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 1rem;
     background-color: #f1f1f1;
@@ -99,7 +99,7 @@ div#view__2 {
 div#view__3 {
     height: 100%;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 1rem;
     background-color: #f1f1f1;
@@ -108,7 +108,7 @@ div#view__3 {
 div#view__4 {
     height: 100%;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 1rem;
     background-color: #f1f1f1;
