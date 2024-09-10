@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>App-Drug</title>
+</head>
+
+<body>
+    <div id="view__1">
+        <header id="header__view__1">
+            <section class="content__text__title">
+                <span class="text__title__header">Halo, Ariel!</span>
+                <span class="text__caption__header">Mari lihat ceklis selanjutnya!</span>
+            </section>
+            <div id="component__drug">
+                <section class="drug__info">
+                    <article class="drug">
+                        <div class="border__image border_image__none"></div>
+                        <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                        <div class="drug__desc">
+                            <span class="drug__name">Antihistamin</span>
+                            <span class="drug__hour">Hari ini pukul 10:00</span>
+                        </div>
+                    </article>
+                    <button class="drug__checkbox check__none" id="cb1" onclick="check(this)"><span
+                            class="material-symbols-outlined" id="cb1_symbol">check</span></button>
+                </section>
+                <section class="drug__alert__box alert__none">
+                    <div class="icon__clock material-symbols-outlined">schedule</div>
+                    <span class="drug__alert__msg">Sudah Diminum pukul 10:05</span>
+                </section>
+            </div>
+        </header>
+        <main id="main__view__1">
+            <span class="text__title__main">Jadwal Hari Ini</span>
+            <div id="main__content__drugs">
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pastilla_redonda2.png" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Siladex</span>
+                                <span class="drug__hour">Hari ini pukul 08:00hs</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox checked" id="cb2" onclick="check(this)"><span
+                                class="material-symbols-outlined" id="cb2_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">Sudah Diminum pukul 08:05</span>
+                    </section>
+                </div>
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image border_image__none"></div>
+                            <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Antihistamin</span>
+                                <span class="drug__hour">Hari ini pukul 10:00</span>
+                            </div>
+                        </article>
+                        <button class="drug__checkbox" id="cb3" onclick="check(this)"><span
+                                class="material-symbols-outlined" id="cb3_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box alert__none">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">Sudah Diminum pukul 10:05</span>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="view__2">
+        <header id="header__view__2">
+            <section class="content__text__title">
+                <span class="text__title__header">Kalender</span>
+            </section>
+            <section id="calendar__view__2">
+                <article id="calendar__days__name">
+                </article>
+                <article id="calendar__days__number">
+                </article>
+            </section>
+        </header>
+        <main id="main__view__2">
+            <span class="text__title__main">Hari Ini</span>
+            <div class="main__content">
+                <div class="main__content__line__hours">
+
+                </div>
+                <div id="main__content__drugs">
+                    <div id="component__drug">
+                        <section class="drug__info">
+                            <article class="drug">
+                                <div class="border__image"></div>
+                                <img src="static/img/pastilla_redonda2.png" alt="" class="drug__img">
+                                <div class="drug__desc">
+                                    <span class="drug__name">Siladex</span>
+                                    <span class="drug__hour">Hari ini pukul 08:00hs</span>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    <div id="component__drug">
+                        <section class="drug__info">
+                            <article class="drug">
+                                <div class="border__image"></div>
+                                <img src="static/img/pastilla_redonda2.png" alt="" class="drug__img">
+                                <div class="drug__desc">
+                                    <span class="drug__name">Siladex</span>
+                                    <span class="drug__hour">Hari ini pukul 08:00hs</span>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    <!-- <div class="separator__line"></div> -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="view__3">
+        <header id="header__view__3">
+            <section class="content__text__title">
+                <span class="text__title__header">Analytics</span>
+            </section>
+            <section class="control__graphic">
+                <button class="btn__graphic" value="cholesterol_levels"
+                    onclick="printGraphic(this.value)">Cholesterol</button>
+                <button class="btn__graphic" value="glucose_levels" onclick="printGraphic(this.value)">Glucose</button>
+                <button class="btn__graphic" value="digoxin_levels" onclick="printGraphic(this.value)">Digoxin</button>
+            </section>
+            <span class="text__title__main">Normal <span class="graphic__title">cholesterol levels</span>:</span>
+            <div id="chart-container">
+                <canvas id="donutChart"></canvas>
+            </div>
+        </header>
+        <main id="main__view__3">
+            <div id="main__content__drugs">
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image"></div>
+                            <img src="static/img/analytics_prom.png" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Average value</span>
+                                <span class="drug__value" id="average__value"></span>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image"></div>
+                            <img src="static/img/max_value.svg" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Maximum value</span>
+                                <span class="drug__value" id="maximum__value"></span>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image"></div>
+                            <img src="static/img/min_value.svg" alt="" class="drug__img">
+                            <div class="drug__desc">
+                                <span class="drug__name">Minimum value</span>
+                                <span class="drug__value" id="minimum__value"></span>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="view__4">
+        <header id="header__view__4">
+            <button class="btn__logout material-symbols-outlined" onclick="showLogin()">logout</button>
+            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="" class="perfil__user__img">
+        </header>
+        <main id="main__view__4">
+            <span class="text__title__main">Perfil <i class="material-symbols-outlined">edit</i></span>
+            <section class="main__content__desc">
+                <article class="desc__user">
+                    <span class="description__name">Nombre y Apellido:</span>
+                    <span class="description__content">Ariel Valdez</span>
+                </article>
+                <article class="desc__user">
+                    <span class="description__name">Edad:</span>
+                    <span class="description__content">18 años</span>
+                </article>
+                <article class="desc__user">
+                    <span class="description__name">Sexo:</span>
+                    <span class="description__content">Hombre</span>
+                </article>
+                <article class="desc__user">
+                    <span class="description__name">Altura:</span>
+                    <span class="description__content">190 cm</span>
+                </article>
+                <article class="desc__user">
+                    <span class="description__name">Peso:</span>
+                    <span class="description__content">81.7 kg</span>
+                </article>
+            </section>
+        </main>
+    </div>
+    <div id="view__5">
+        <header id="header__view__5">
+            <section class="content__btn__controls">
+                <i class="material-symbols-outlined" onclick="showMenu()">keyboard_backspace</i>
+                <i class="material-symbols-outlined">edit</i>
+            </section>
+            <section class="drug__info">
+                <img src="static/img/pildora.jpg" alt="" class="drug__img">
+                <article class="drug__main">
+                    <span class="drug__name">Antihistamínico</span>
+                    <span class="drug__desc">Esto es un antihistáminico, para histéricos</span>
+                </article>
+            </section>
+            <section class="data__calendar__drug">
+                <article class="calendar__box">
+                    <span class="box__title">Duracion</span>
+                    <div class="box__main">
+                        <i class="material-symbols-outlined">calendar_today</i>
+                        <span class="box__desc">1 Dia</span>
+                    </div>
+                </article>
+                <article class="calendar__box">
+                    <span class="box__title">Frecuencia</span>
+                    <div class="box__main">
+                        <i class="material-symbols-outlined">schedule</i>
+                        <span class="box__desc">2 Semanas</span>
+                    </div>
+                </article>
+            </section>
+        </header>
+        <main id="main__view__5">
+            <span class="text__title__main">Ceklis Selanjutnya</span>
+
+            <div id="main__content__drugs">
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image"></div>
+                            <img src="static/img/pastilla_redonda2.png" alt="" class="drug__img drug__img__none">
+                            <div class="drug__desc">
+                                <span class="drug__name">Hari ini pukul 10:00</span>
+                                <span class="drug__hour">1 Kapsul Antihistaminico</span>
+                            </div>
+                        </article>
+                        <i class="material-symbols-outlined drug__arrow">keyboard_arrow_up</i>
+                        <button class="drug__checkbox checked check__none" id="cb2" onclick="check(this)"><span
+                                class="material-symbols-outlined" id="cb2_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box alert__none">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">Sudah Diminum pukul 08:05</span>
+                    </section>
+                    <section class="drug__control">
+                        <button class="btn__control btn__after">Mas Tarde</button>
+                        <button class="btn__control btn__ended">Finalizado</button>
+                    </section>
+                </div>
+                <div id="component__drug">
+                    <section class="drug__info">
+                        <article class="drug">
+                            <div class="border__image"></div>
+                            <img src="static/img/pildora.jpg" alt="" class="drug__img drug__img__none">
+                            <div class="drug__desc">
+                                <span class="drug__name">Hari ini pukul 16:00</span>
+                                <span class="drug__hour">1 Kapsul Antihistaminico</span>
+                            </div>
+                        </article>
+                        <i class="material-symbols-outlined drug__arrow">keyboard_arrow_down</i>
+                        <button class="drug__checkbox check__none" id="cb3" onclick="check(this)"><span
+                                class="material-symbols-outlined" id="cb3_symbol">check</span></button>
+                    </section>
+                    <section class="drug__alert__box alert__none">
+                        <div class="icon__clock material-symbols-outlined">schedule</div>
+                        <span class="drug__alert__msg">Sudah Diminum pukul 10:05</span>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="view__6">
+        <header id="header__view__6">
+            <span class="text__title__main">Welcome!</span>
+            <span class="text__caption__main">To APP-DRUG</span>
+        </header>
+        <main id="main__view__6">
+            <div class="view__6__form" id="login__view">
+                <section class="form">
+                    <span class="text__title__main">¡Inicia Sesion!</span>
+                    <input type="text" class="input__user" name="txt_user" id="login_user" placeholder="User_Name">
+                    <input type="password" class="input__user" name="txt_pass" id="login_pass" placeholder="****">
+                    <div id="error_login"></div>
+                    <button class="btn__form" id="login">Login</button>
+                </section>
+                <section class="user__account">
+                    <span class="register__text">No tienes cuenta?</span>
+                    <button class="btn__toggle" id="register_view" onclick="showRegisterForm()">Registrate!</button>
+                </section>
+            </div>
+            <div class="view__6__form toggle__view__none" id="register__view">
+                <section class="form">
+                    <span class="text__title__main">¡Registrate!</span>
+                    <input type="text" class="input__user" name="txt_user" id="register_user" placeholder="User_Name">
+                    <input type="password" class="input__user" name="txt_pass" id="register_pass" placeholder="****">
+                    <div id="error_register"></div>
+                    <button class="btn__form" id="register">Register</button>
+                </section>
+                <section class="user__account">
+                    <span class="register__text">Ya tienes una cuenta?</span>
+                    <button class="btn__toggle" id="login_view" onclick="showLoginForm()">Logueate!</button>
+                </section>
+            </div>
+            <section class="social__media">
+                <button class="btn_media">F</button>
+                <button class="btn_media">I</button>
+                <button class="btn_media">X</button>
+                <button class="btn_media">Gh</button>
+                <button class="btn_media">Gl</button>
+            </section>
+        </main>
+    </div>
+    <footer id="footer">
+        <nav class="nav__btns__control">
+            <article class="btns__side">
+                <button class="btn__nav material-symbols-outlined nav__check" onclick="showMenu()"
+                    id="home">home</button>
+                <button class="btn__nav material-symbols-outlined" onclick="showCalendar()"
+                    id="calendar">calendar_month</button>
+            </article>
+            <button class="btn__center material-symbols-outlined" onclick="showDescDrug()" id="add">add</button>
+            <article class="btns__side">
+                <button class="btn__nav material-symbols-outlined" onclick="showAnalytics()"
+                    id="analytics">analytics</button>
+                <button class="btn__nav material-symbols-outlined" onclick="showPerfil()" id="perfil">person</button>
+            </article>
+        </nav>
+    </footer>
+    <script src="js/components/router.js"></script>
+    <script src="js/components/load-calendar.js"></script>
+    <script src="js/components/create_graphic.js"></script>
+
+</body>
+
+</html>

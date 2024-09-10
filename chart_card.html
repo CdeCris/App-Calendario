@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    se han registrado <span id="cant__product"></span> productos <br>
+    <a href="product_card.html">volver</a>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const cant_prod = params.get('cant');
+        cant__product.innerText = cant_prod
+    </script>
+</body>
+</html>

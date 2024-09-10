@@ -1,0 +1,146 @@
+@media (orientation: landscape) {
+    html {
+        font-size: 14px;
+    }
+
+    footer {
+        nav.nav__btns__control {
+            button.btn__nav {
+                padding: 0rem;
+            }
+
+            button#add.btn__center {
+                top: 0.5rem;
+            }
+        }
+    }
+
+    div#view__1 {
+        flex-direction: row;
+        gap: 8%;
+
+        header#header__view__1 {
+            height: 85%;
+            width: 60%;
+            justify-content: start;
+            gap: 8%;
+        }
+
+        main#main__view__1 {
+            height: 100%;
+            width: 85%;
+
+            div#main__content__drugs {
+                height: 72%;
+            }
+        }
+    }
+
+    div#view__2 {
+        flex-direction: row;
+        gap: 8%;
+
+        header#header__view__2 {
+            height: 85%;
+            width: 60%;
+        }
+
+        main#main__view__2 {
+            height: 100%;
+            width: 85%;
+
+            .main__content {
+                width: 92%;
+
+                div#main__content__drugs {
+                    height: 72%;
+                }
+            }
+        }
+    }
+
+    div#view__3 {
+        flex-direction: row;
+        gap: 8%;
+
+        header#header__view__3 {
+            height: 100%;
+            width: 60%;
+        }
+
+        main#main__view__3 {
+            height: 100%;
+            width: 85%;
+
+            div#main__content__drugs {
+                max-height: 95%;
+            }
+        }
+    }
+
+    div#view__4 {
+        flex-direction: row;
+        gap: 8%;
+
+        header#header__view__4 {
+            height: 85%;
+            width: 33%;
+
+            img.perfil__user__img {
+                top: 7rem;
+                right: 0rem;
+                left: 4.6rem;
+            }
+        }
+
+        main#main__view__4 {
+            height: 100%;
+            width: 50%;
+            padding-top: 0rem;
+
+            section.main__content__desc {
+                height: 73%;
+            }
+        }
+    }
+
+    div#view__5 {
+        flex-direction: row;
+        gap: 5%;
+
+        header#header__view__5 {
+            height: 100%;
+            width: 60%;
+        }
+
+        main#main__view__5 {
+            height: 100%;
+            width: 85%;
+            padding-top: 1rem;
+        }
+    }
+
+    div#view__6 {
+        flex-direction: row;
+        gap: 8%;
+
+        header#header__view__6 {
+            height: 100%;
+            width: 60%;
+        }
+
+        main#main__view__6 {
+            height: 100%;
+            width: 85%;
+
+            div.view__6__form {
+                height: 80%;
+            }
+
+            section.social__media {
+                padding: 0rem 3rem;
+            }
+        }
+    }
+
+}
