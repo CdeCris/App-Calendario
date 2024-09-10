@@ -87,9 +87,9 @@
             width: 33%;
 
             img.perfil__user__img {
-                top: 7rem;
-                right: 0rem;
-                left: 4.6rem;
+                position: relative;
+                display: flex;
+                height: 40%;
             }
         }
 
