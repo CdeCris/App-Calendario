@@ -426,7 +426,7 @@ button.material-symbols-outlined {
 
         img.perfil__user__img {
             position: absolute;
-            top: 6rem;
+            top: 4rem;
             right: calc(50% - 7rem);
             height: 14rem;
             width: auto;
